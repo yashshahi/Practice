@@ -16,6 +16,8 @@ import threading
 import requests
 from bs4 import BeautifulSoup
 
+url=[""]
+
 def fetch_content(url):
     response=requests.get(url)
     soup=BeautifulSoup(response.content,'html.parser')
