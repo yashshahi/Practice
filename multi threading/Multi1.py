@@ -8,7 +8,6 @@ improve the performance by allowing multiple web pages to be fetch concurently
 
 '''
 
-urls=[""]
 #advantage of multi threading is we feed it with 3 threads 
 #and then we ask it to pull the data from all the 3 urls
 
@@ -16,7 +15,7 @@ import threading
 import requests
 from bs4 import BeautifulSoup
 
-url=[""]
+urls=[""]
 
 def fetch_content(url):
     response=requests.get(url)
