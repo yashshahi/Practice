@@ -19,7 +19,7 @@ def home():
 
 @app.route('/items',methods=['GET'])
 def get_items():
-    return jsonify(items)
+    return jsonify(items) #return all the file in the form json
 
 ## get: Retireve a specific item by Id
 @app.route('/items/<int:item_id>',methods=['GET'])
